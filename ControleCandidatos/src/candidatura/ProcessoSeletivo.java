@@ -24,17 +24,13 @@ public class ProcessoSeletivo {
 			else 
 				System.out.println("CONTADO REALIZADO COM SUCESSO");
 			
-			
 		}while(continuarTentando && tentativasRealizadas < 3);
 		
 		if(atendeu)
 			System.out.println("CONSEGUIMOS CONTATO COM " + candidato + " NA " + tentativasRealizadas + " TENTATIVA");
 		else
 			System.out.println("NÃO CONSEGUIMOS CONTATO COM " + candidato + ", NÚMERO MAXIMO TENTATIVAS " + tentativasRealizadas + " REALIZADA");
-		
 	}
-	
-	
 	
 	static boolean atender() {
 		return new Random().nextInt(3)==1;
@@ -56,9 +52,6 @@ public class ProcessoSeletivo {
 		}
 	}
 	
-	
-	
-	
 	static void selecaoCandidatos() {
 		String [] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO", "MONICA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
 		
@@ -77,6 +70,7 @@ public class ProcessoSeletivo {
 			candidatosAtual++;
 		}
 	}
+	
 	static double valorPretendido() {
 		return ThreadLocalRandom.current().nextDouble(1800, 2200);
 	}
